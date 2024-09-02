@@ -7,14 +7,14 @@ import NoodleImage from "/public/noodle.png";
 import CylinderImage from "/public/cylinder.png";
 const Hero: FC = () => {
   return (
-    <section className="p-4 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_66%)] overflow-x-clip">
+    <section className="p-4 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE,#ffffff)] overflow-x-clip">
       <div className="container mx-auto ">
         <div className=" flex md:flex-row flex-col  ">
           <div className="md:w-[478px] w-[300px] md:mt-20 mt-0 ">
-            <span className="px-2 py-1 text-xs font-medium border border-primary-gray rounded-md">
+            <span className="px-2 mt-4 py-1 text-xs font-medium border border-primary-gray rounded-md">
               Version 2.0 is here
             </span>
-            <h1 className="font-medium mt-2 md:text-6xl text-4xl tracking-tight bg-gradient-to-b to-[#001354]">
+            <h1 className="font-medium mt-8 md:text-6xl text-4xl tracking-tight bg-gradient-to-b to-[#001354]">
               Pathway to productivity
             </h1>
             <h2 className="text-sm mt-4">

@@ -1,10 +1,13 @@
-import { Header, Hero } from "@/components";
+import { Header, Hero, LogoTicker } from "@/components";
+import ProductShowCase from "@/components/ProductShowCase";
 
 export default function Home() {
   return (
-    <div className="bg-body">
+    <>
       <Header />
       <Hero />
-    </div>
+      <LogoTicker />
+      <ProductShowCase />
+    </>
   );
 }

@@ -10,4 +10,23 @@
   .btn-primary {
     @apply bg-black text-white;
   }
+
+  .logo-ticker-image {
+    @apply w-auto h-8;
+  }
+
+  .product-catalog-item {
+    @apply flex flex-col items-start;
+  }
+  .product-catalog-item h3 {
+    @apply font-medium text-lg md:text-xl;
+  }
+
+  .product-catalog-item h2 {
+    @apply text-start my-1 text-xs md:text-sm;
+  }
+
+  .product-catalog-item div span {
+    @apply text-xs md:text-sm;
+  }
 }

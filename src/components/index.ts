@@ -1,3 +1,5 @@
 import Header from "./Header";
 import Hero from "./Hero";
-export { Header, Hero };
+import LogoTicker from "./LogoTicker";
+import ProductShowCase from "./ProductShowCase";
+export { Header, Hero, LogoTicker };
