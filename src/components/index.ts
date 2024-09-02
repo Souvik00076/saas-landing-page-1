@@ -6,6 +6,7 @@ import PriceShow from "./ProceShow";
 import CommonCard from "./CommonCard";
 import Productivity from "./Productivity";
 import CommonPriceCard from "./CommonPriceCard";
+import Testimonials from "./Testimonials";
 export {
   CommonCard,
   Header,
@@ -15,4 +16,5 @@ export {
   ProductShowCase,
   Productivity,
   CommonPriceCard,
+  Testimonials,
 };

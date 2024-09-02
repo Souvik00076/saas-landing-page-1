@@ -4,6 +4,7 @@ import {
   LogoTicker,
   PriceShow,
   Productivity,
+  Testimonials,
 } from "@/components";
 import ProductShowCase from "@/components/ProductShowCase";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <ProductShowCase />
       <PriceShow />
       <Productivity />
+      <Testimonials />
     </>
   );
 }
