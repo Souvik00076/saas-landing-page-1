@@ -6,7 +6,7 @@ const PriceShow: FC = () => {
   return (
     <section className=" pt-4 pb-12 overflow-x-clip">
       <div className="container mx-auto">
-        <div className="flex flex-col items-center md:w-[600px] text-center container mx-auto">
+        <div className="flex flex-col items-center md:w-[600px] text-center container mx-auto gap-4 ">
           <span className="px-2 mt-4 py-1 text-xs font-medium border border-primary-gray rounded-md tracking-tight">
             Everything you need
           </span>
@@ -18,7 +18,7 @@ const PriceShow: FC = () => {
             one place. Set tasks, get reminders, and see your progress simple
             and quickly.
           </h2>
-          <div className="mt-6 md:mt-8 flex flex-col md:flex-row items-center gap-2">
+          <div className="mt-6 md:mt-8 flex flex-col md:flex-row items-center gap-4">
             <CommonCard
               image={CubeImage}
               header={"Integration ecosystem"}

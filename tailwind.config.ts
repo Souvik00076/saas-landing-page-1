@@ -13,6 +13,7 @@ const config: Config = {
         "border-primary-gray": "rgba(34,34,34,0.1",
         body: "#EAEEFE",
       },
+      boxShadow: {},
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

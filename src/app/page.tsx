@@ -1,4 +1,10 @@
-import { Header, Hero, LogoTicker, PriceShow } from "@/components";
+import {
+  Header,
+  Hero,
+  LogoTicker,
+  PriceShow,
+  Productivity,
+} from "@/components";
 import ProductShowCase from "@/components/ProductShowCase";
 
 export default function Home() {
@@ -9,6 +15,7 @@ export default function Home() {
       <LogoTicker />
       <ProductShowCase />
       <PriceShow />
+      <Productivity />
     </>
   );
 }
