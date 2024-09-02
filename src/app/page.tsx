@@ -1,4 +1,5 @@
 import {
+  Action,
   Header,
   Hero,
   LogoTicker,
@@ -18,6 +19,7 @@ export default function Home() {
       <PriceShow />
       <Productivity />
       <Testimonials />
+      <Action />
     </>
   );
 }

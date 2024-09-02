@@ -7,6 +7,7 @@ import CommonCard from "./CommonCard";
 import Productivity from "./Productivity";
 import CommonPriceCard from "./CommonPriceCard";
 import Testimonials from "./Testimonials";
+import Action from "./Action";
 export {
   CommonCard,
   Header,
@@ -17,4 +18,5 @@ export {
   Productivity,
   CommonPriceCard,
   Testimonials,
+  Action,
 };
