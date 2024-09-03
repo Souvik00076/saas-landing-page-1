@@ -8,6 +8,7 @@ import Productivity from "./Productivity";
 import CommonPriceCard from "./CommonPriceCard";
 import Testimonials from "./Testimonials";
 import Action from "./Action";
+import Footer from "./Footer";
 export {
   CommonCard,
   Header,
@@ -19,4 +20,5 @@ export {
   CommonPriceCard,
   Testimonials,
   Action,
+  Footer,
 };

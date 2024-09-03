@@ -1,5 +1,6 @@
 import {
   Action,
+  Footer,
   Header,
   Hero,
   LogoTicker,
@@ -20,6 +21,7 @@ export default function Home() {
       <Productivity />
       <Testimonials />
       <Action />
+      <Footer />
     </>
   );
 }
