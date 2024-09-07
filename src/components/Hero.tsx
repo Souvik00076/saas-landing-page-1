@@ -5,6 +5,9 @@ import CogImage from "/public/cog.png";
 import Image from "next/image";
 import NoodleImage from "/public/noodle.png";
 import CylinderImage from "/public/cylinder.png";
+import { ANIMATION } from "@/animations/motionAnimation";
+import MotionImage from "./MotionImage";
+import { AnimationProps } from "framer-motion";
 const Hero: FC = () => {
   return (
     <section className="p-4 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#183EC2,#EAEEFE_66%)] overflow-x-clip">
@@ -35,25 +38,32 @@ const Hero: FC = () => {
             </div>
           </div>
           <div className="relative md:flex-1  md:h-[648px] h-[388px] mt-20">
-            <Image
-              src={CogImage}
-              className="absolute  md:h-full md:max-w-none md:left-6 md:w-auto"
-              alt="cog icon "
-            />
-            <Image
-              src={CylinderImage}
-              alt="cylinder"
-              className="hidden  md:block absolute  left-[-40px] top-[-80px]"
-              width={220}
-              height={220}
-            />
-            <Image
-              src={NoodleImage}
-              alt="cylinder"
-              className="hidden  xl:block absolute  right-4 top-[524px] rotate-[30deg]"
-              width={220}
-              height={220}
-            />
+            <MotionImage
+              animate={ANIMATION.fadeLeftAndFloat as unknown as AnimationProps}
+              style="absolute md:h-full md:6 xl:left-48 md:max-w-[648px]"
+            >
+              <Image src={CogImage} alt="cog icon " />
+            </MotionImage>
+            <MotionImage
+              animate={ANIMATION.fadeDown}
+              style="hidden  md:block absolute  left-[-40px] top-[-80px]"
+            >
+              <Image
+                src={CylinderImage}
+                alt="cylinder"
+                width={220}
+                height={220}
+              />
+            </MotionImage>
+            <MotionImage animate={ANIMATION.fadeRight}>
+              <Image
+                src={NoodleImage}
+                alt="cylinder"
+                className="hidden  xl:block absolute  right-4 top-[524px] rotate-[30deg]"
+                width={220}
+                height={220}
+              />
+            </MotionImage>
           </div>
         </div>
       </div>

@@ -9,6 +9,8 @@ import CommonPriceCard from "./CommonPriceCard";
 import Testimonials from "./Testimonials";
 import Action from "./Action";
 import Footer from "./Footer";
+import MotionDiv from "./MotionDiv";
+import MotionImage from "./MotionImage";
 export {
   CommonCard,
   Header,
@@ -21,4 +23,6 @@ export {
   Testimonials,
   Action,
   Footer,
+  MotionDiv,
+  MotionImage,
 };
