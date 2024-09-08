@@ -34,4 +34,15 @@ export const ANIMATION = {
       ease: "easeInOut",
     },
   },
+  tickerAnimation: {
+    animate: {
+      translateX: "-70%",
+    },
+    transition: {
+      duration: 20,
+      repeat: Infinity,
+      repeatType: "loop",
+      ease: "linear",
+    },
+  },
 };

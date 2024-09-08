@@ -7,11 +7,17 @@ import EchoLogo from "/public/logo-echo.png";
 import PulseLogo from "/public/logo-pulse.png";
 import QuantumLogo from "/public/logo-quantum.png";
 import Image from "next/image";
+import MotionDiv from "./MotionDiv";
+import { ANIMATION } from "@/animations/motionAnimation";
+import { AnimationProps } from "framer-motion";
 const LogoTicker: FC = () => {
   return (
     <div className="  bg-white w-full py-4 md:py-12">
       <div className="container overflow-hidden mx-auto [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
-        <div className="flex gap-x-14 justify-evenly flex-none ">
+        <MotionDiv
+          style="flex gap-x-14 justify-evenly flex-none "
+          animate={ANIMATION.tickerAnimation as AnimationProps}
+        >
           <Image src={AcmeLogo} alt="acme logo" className="logo-ticker-image" />
           <Image src={ApexLogo} alt="apex logo" className="logo-ticker-image" />
 
@@ -26,7 +32,7 @@ const LogoTicker: FC = () => {
             alt="quantum logo"
             className="logo-ticker-image"
           />
-        </div>
+        </MotionDiv>
       </div>
     </div>
   );
